@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANAGE | HOME</title>
+    <link rel="icon" href="ICONS/SVG-1_MANAGE-LOGO.svg" type="image/x-icon">
+    <!-- index.css CSS File -->
+    <link rel="stylesheet" href="CSS-FILES/index.css">
+    <!-- Inline CSS Classes FrameWork 1 -->
+    <link rel="stylesheet" href="CSS-FILES/CSS-Framework-1.css">
+    <!-- Inline CSS Classes FrameWork 2 -->
+    <link rel="stylesheet" href="CSS-FILES/CSS-Framework-2.css">
+    <!-- Inline CSS Classes FrameWork 3 -->
+    <link rel="stylesheet" href="CSS-FILES/CSS-Framework-3.css">
+    <!-- Inline CSS Classes FrameWork 4 -->
+    <link rel="stylesheet" href="CSS-FILES/CSS-FrameWork-4.css">
+</head>
+
+<body class="w-100vw mnh-100vh">
+    <!-- Header Start -->
+    <header class="w-100vw d-flex aj-ai-c">
+        <!-- Navigation Bar Start -->
+        <nav class="Top_Navigation_Bar_1 w-100p h-85p d-flex aj-ai-c">
+            <!-- Responsive Navigation Bar Top->Side Start (Test-2) -->
+            <div class="TNB1_ResponsiveNav">
+                <div id="TNB1_MenuButton" onclick="MenuBtn_Change(this)">
+                    <div class="TNB1MB_Bar1"></div>
+                    <div class="TNB1MB_Bar2"></div>
+                    <div class="TNB1MB_Bar3"></div>
+                </div>
+            </div>
+            <div id="TNB1_NavOverlay"> <!-- class="accordion" -->
+                <div class="TNB1O_ListContainer">
+                    <div class="TNB1O_List"> <!-- class="accordion-item" -->
+                        <button class="TNB1O_ListHeader" onclick="TNB1O_HeaderToggle(this)">
+                            <!-- class="accordion-header" onclick="toggleAccordion(this)" -->
+                            Profile
+                            <span class="TNB1OLH_Icon TNB1OLH_IconRotate"> <!-- class="material-icons rotate" -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="TNB1O_ListContent"> <!-- class="accordion-content" -->
+                            <p>THIS IS CONTENT.</p>
+                        </div>
+                    </div>
+                    <div class="TNB1O_List"> <!-- class="accordion-item" -->
+                        <button class="TNB1O_ListHeader" onclick="TNB1O_HeaderToggle(this)">
+                            <!-- class="accordion-header" onclick="toggleAccordion(this)" -->
+                            Documents
+                            <span class="TNB1OLH_Icon TNB1OLH_IconRotate"> <!-- class="rotate" -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="TNB1O_ListContent"> <!-- class="accordion-content" -->
+                            <p>THIS IS CONTENT.</p>
+                        </div>
+                    </div>
+                    <div class="TNB1O_List"> <!-- class="accordion-item" -->
+                        <button class="TNB1O_ListHeader" onclick="TNB1O_HeaderToggle(this)">
+                            <!-- class="accordion-header" onclick="toggleAccordion(this)" -->
+                            Study
+                            <span class="TNB1OLH_Icon TNB1OLH_IconRotate"> <!-- class="rotate" -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="TNB1O_ListContent"> <!-- class="accordion-content" -->
+                            <ul class="TNB1OLC_SublistBox">
+                                <li class="TNB1OLC_MSubList TNB1OLC_MSubListP1 d-flex">
+                                    <span>Learn</span>
+                                    <a href="#">Computer Science</a>
+                                    <a href="#">Bachelor Of Technology</a>
+                                    <a href="#">CBSE - NCERT</a>
+                                    <a href="#">Bachelor Of Science</a>
+                                </li>
+                                <li class="TNB1OLC_MSubList TNB1OLC_SubListP2 d-flex">
+                                    <span>Know About</span>
+                                    <a href="#" target="_blank" class="d-flex">W3Schools &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="17px" fill="#5f6368">
+                                            <path
+                                                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h200q17 0 28.5 11.5T840-800v200q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" target="_blank" class="d-flex">Github Pages &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="17px" fill="#5f6368">
+                                            <path
+                                                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h200q17 0 28.5 11.5T840-800v200q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" target="_blank" class="d-flex">GUVI &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="17px" fill="#5f6368">
+                                            <path
+                                                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h200q17 0 28.5 11.5T840-800v200q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="TNB1O_List"> <!-- class="accordion-item" -->
+                        <button class="TNB1O_ListHeader" onclick="TNB1O_HeaderToggle(this)">
+                            <!-- class="accordion-header" onclick="toggleAccordion(this)" -->
+                            Projects
+                            <span class="TNB1OLH_Icon TNB1OLH_IconRotate"> <!-- class="rotate" -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="TNB1O_ListContent"> <!-- class="accordion-content" -->
+                            <p>THIS IS CONTENT.</p>
+                        </div>
+                    </div>
+                    <div class="TNB1O_List"> <!-- class="accordion-item" -->
+                        <button class="TNB1O_ListHeader" onclick="TNB1O_HeaderToggle(this)">
+                            <!-- class="accordion-header" onclick="toggleAccordion(this)" -->
+                            Accessibilities
+                            <span class="TNB1OLH_Icon TNB1OLH_IconRotate"> <!-- class="rotate" -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="TNB1O_ListContent"> <!-- class="accordion-content" -->
+                            <p>THIS IS CONTENT.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="TNB1O_BottomContainer d-flex">
+                    <!-- Search Bar Start -->
+                    <div class="TNB1O_SearchBar aj-ai-c w-90p aj-jc-c usn">
+                        <span class="w-80p d-flex aj-ai-c">
+                            <span>Search</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000">
+                                <path
+                                    d="M380-320q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l224 224q11 11 11 28t-11 28q-11 11-28 11t-28-11L532-372q-30 24-69 38t-83 14Zm0-80q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <!-- Search Bar End -->
+                    <!-- Blog Button Start -->
+                    <a href="#" class="d-flex aj-ai-c aj-jc-c">BLOG</a>
+                    <!-- Blog Button End -->
+                </div>
+            </div>
+            <!-- Responsive Navigation Bar Top->Side End (Test-2) -->
+            <!-- Logo Start -->
+            <div class="TNB1_Logo d-flex aj-ai-c aj-jc-c h-100p usn">
+                <a href="index.html" class="d-flex aj-ai-c aj-jc-c w-mxc h-mxc"><img
+                        src="ICONS/SVG-2_MANAGE-NAVLOGO.svg" alt="Navigation Bar Logo" width="50"></a>
+            </div>
+            <!-- Logo End -->
+
+            <!-- Menu Block Start -->
+            <div class="TNB1_MenuBlock aj-ai-c w-50p h-100p">
+                <ul class="TNB1MB-MainList d-flex aj-ai-c usn h-70p">
+                    <li class="d-flex aj-ai-c h-100p">Profile
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#fafafa">
+                            <path
+                                d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+                        </svg>
+                    </li>
+                    <li class="d-flex aj-ai-c h-100p">Documents
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#fafafa">
+                            <path
+                                d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+                        </svg>
+                    </li>
+                    <li class="d-flex aj-ai-c h-100p">Study
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#fafafa">
+                            <path
+                                d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+                        </svg>
+                        <ul class="TNB1MB-SubList w-mxc h-mxh p10">
+                            <li class="d-flex p20">
+                                <span>LEARN</span>
+                                <a href="#">Computer Science</a>
+                                <a href="#">Bachelor Of Technology</a>
+                                <a href="#">CBSE - NCERT</a>
+                                <a href="#">Bachelor Of Science</a>
+                            </li>
+                            <li class="d-flex p20">
+                                <span>Know About</span>
+                                <a href="#" target="_blank" class="d-flex">W3Schools &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="17px" fill="#5f6368">
+                                        <path
+                                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h200q17 0 28.5 11.5T840-800v200q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z" />
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="d-flex">Github Pages &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="17px" fill="#5f6368">
+                                        <path
+                                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h200q17 0 28.5 11.5T840-800v200q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z" />
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="d-flex">GUVI &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="17px" fill="#5f6368">
+                                        <path
+                                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h200q17 0 28.5 11.5T840-800v200q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="d-flex aj-ai-c h-100p">Projects
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#fafafa">
+                            <path
+                                d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+                        </svg>
+                    </li>
+                    <li class="d-flex aj-ai-c h-100p">Accessibilities
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#fafafa">
+                            <path
+                                d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menu Block End -->
+
+            <!-- Search Bar Start -->
+            <div class="TNB1_SearchBar aj-ai-c w-25p aj-jc-c usn h-100p">
+                <span class="w-80p d-flex aj-ai-c">
+                    <span>Search</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#f0f0f0">
+                        <path
+                            d="M380-320q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l224 224q11 11 11 28t-11 28q-11 11-28 11t-28-11L532-372q-30 24-69 38t-83 14Zm0-80q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                </span>
+            </div>
+            <!-- Search Bar End -->
+
+            <!-- End Buttons Start -->
+            <div class="TNB1_EndButtons w-20p d-flex aj-ai-c h-100p">
+                <a href="#">STUDY PORTAL</a>
+                <a href="#">BLOG</a>
+            </div>
+            <!-- End Buttons End -->
+        </nav>
+        <!-- Navigation Bar End -->
+    </header>
+    <!-- Header End -->
+
+    <script src="JS-Files/index.js"></script>
+</body>
+
+</html>

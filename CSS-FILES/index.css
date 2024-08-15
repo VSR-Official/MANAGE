@@ -1,0 +1,392 @@
+/* Universal Properties Start */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Universal Properties End */
+
+/* Properties Of  HTML and Body Start */
+html, body {
+    background: linear-gradient(166deg, rgb(0, 0, 0), rgb(0, 25, 48), rgb(0, 42, 82), rgb(0, 72, 139), rgb(0, 100, 194));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    overflow-x: hidden;
+}
+/* Properties Of HTML and Body End */
+
+/* Properties Of Header Start */
+header {
+    height: 10vh;
+    z-index: 20;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* Properties Of Header End */
+
+/* Properties Of Responsive Navigation Top->Side Start */
+.TNB1_ResponsiveNav {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Properties Of Menu Button Start */
+.TNB1_ResponsiveNav {
+    display: none;
+}
+
+#TNB1_MenuButton {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    left: 15px;
+}
+.TNB1MB_Bar1, .TNB1MB_Bar2, .TNB1MB_Bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.TNB1MB_Change .TNB1MB_Bar1 {
+    transform: translate(0, 7px) rotate(-45deg);
+}
+
+.TNB1MB_Change .TNB1MB_Bar2 {
+    opacity: 0;
+}
+
+.TNB1MB_Change .TNB1MB_Bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+/* Properties Of Menu Button End */
+
+/* Properties Of Overlay Navigation Pane Start */
+#TNB1_NavOverlay {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    display: none;
+    flex-flow: row wrap;
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-content: space-between;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* no-scroll is used to stop scrolling in body when navigation bar is open */
+.no-scroll {
+    overflow: hidden;
+}
+/* Properties Of Overlay Navigation Pane End */
+.TNB1O_ListHeader {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TNB1O_ListContainer {
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+}
+
+.TNB1O_ListContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.TNB1O_ListContent ul{
+    margin: 10px 0;
+}
+
+.TNB1OLH_Icon {
+    transform: rotate(-90deg);
+}
+.TNB1OLH_Icon .TNB1OLH_IconRotate {
+    transition: transform 0.5s ease-out;
+}
+
+.TNB1O_ListHeader.active .TNB1OLH_Icon {
+    transform: rotate(0deg);
+}
+
+/* Properties Of Menu In Responsive Navigation Start */
+.TNB1OLC_SublistBox {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 20px;
+    row-gap: 20px;
+}
+
+.TNB1OLC_MSubList {
+    padding: 10px;
+    flex-flow: column wrap;
+    row-gap: 5px;
+    border-top: 1px solid black;
+}
+
+.TNB1OLC_MSubList:nth-child(1) {
+    border-top: none;
+}
+
+.TNB1OLC_MSubList span {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.TNB1OLC_MSubList a {
+    font-size: 17px;
+    text-decoration: none;
+    color:black;
+    font-family: monospace;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.TNB1OLC_MSubList a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+/* Properties Of Menu In Responsive Navigation End */
+.TNB1O_BottomContainer {
+    width: 100%;
+    height: max-content;
+    padding: 15px 0px;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    height: 30%;
+    row-gap: 10px;
+    margin-top: 15px;
+}
+
+.TNB1O_BottomContainer a {
+    background-color: black;
+    color: white;
+    width: 72%;
+    border-radius: 10px;
+    padding: 8px 0px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+}
+/* Properties Of Search Bar Start */
+.TNB1O_SearchBar {
+    display: flex;
+    width: 100%;
+}
+
+.TNB1O_SearchBar > span {
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: space-between;
+    font-family: sans-serif;
+    transition: 0.4s;
+    cursor: text;
+}
+
+.TNB1O_SearchBar span {
+    color: black;
+}
+
+.TNB1O_SearchBar > span:hover {
+    opacity: 0.7;
+}
+/* Properties Of Search Bar End */
+/* Properties Of Responsive Navigation Top->Side End */
+
+/* Properties Of Navigarion Bar Logo Start */
+.TNB1_Logo {
+    width: 5%;
+}
+/* Hover And Active Effects For Navigation Bar Logo Start */
+.TNB1_Logo a img {
+    transition: 0.1s;
+}
+
+.TNB1_Logo a img:hover {
+    width: 47px;
+}
+
+.TNB1_Logo a img:active {
+    width: 50px;
+}
+/* Hover And Active Effects For Navigation Bar Logo End */
+/* Properties Of Navigarion Bar Logo End */
+
+/* Properties Of Navigation Bar Menu Start */
+.TNB1_MenuBlock {
+    display: flex;
+}
+
+.TNB1MB-MainList {
+    gap: 15px;
+}
+
+.TNB1MB-MainList li{
+    list-style: none;
+    font-family: sans-serif;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.TNB1MB-MainList li:hover {
+    color: rgb(197, 197, 197);
+}
+
+/* Properties Of SubMenu Start */
+.TNB1MB-SubList {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: -60%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.TNB1MB-SubList li {
+    flex-flow: column wrap;
+    row-gap: 5px;
+}
+
+.TNB1MB-SubList li:nth-child(1) {
+    border-right: 1px solid black;
+}
+
+.TNB1MB-SubList li span {
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.TNB1MB-SubList li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.TNB1MB-SubList li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.TNB1MB-MainList li:hover .TNB1MB-SubList {
+    display: flex;
+}
+/* Properties Of SubMenu End */
+/* Properties Of Navigation Bar Menu End */
+
+/* Properties Of In Navigation Search Bar Start */
+.TNB1_SearchBar {
+    display: flex;
+}
+
+.TNB1_SearchBar > span {
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    justify-content: space-between;
+    font-family: sans-serif;
+    transition: 0.4s;
+    cursor: text;
+}
+
+.TNB1_SearchBar span {
+    color: white;
+}
+
+.TNB1_SearchBar > span:hover {
+    opacity: 0.7;
+}
+/* Properties Of In Navigation Search Bar End */
+
+/* Properties Of Navigation End Buttons Start */
+.TNB1_EndButtons {
+    column-gap: 15px;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.TNB1_EndButtons a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.TNB1_EndButtons a:hover {
+    opacity: 0.8;
+}
+
+.TNB1_EndButtons a:active {
+    opacity: 1;
+}
+/* Properties Of Navigation End Buttons End */
+
+/* Responsive Properties Of Navigation Bar Start */
+@media screen and (max-width: 1000px) {
+    .TNB1_ResponsiveNav {
+        display: flex;
+    }
+
+    .TNB1_EndButtons a:nth-child(2), .TNB1_SearchBar, .TNB1_MenuBlock {
+        display: none;
+    }
+
+    .TNB1_Logo {
+        width: 80%;
+    }
+
+    .TNB1_EndButtons a:nth-child(1) {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+}
+/* Responsive Properties Of Navigation Bar End */

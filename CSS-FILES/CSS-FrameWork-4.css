@@ -1,0 +1,9 @@
+/* Inline CSS Classes */
+/*  */
+/*  */
+
+/* User Selection */
+/* User-Select: None => .usn */
+.usn {
+    user-select: none;
+}

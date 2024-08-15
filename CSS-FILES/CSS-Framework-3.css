@@ -1,0 +1,43 @@
+/* Inline CSS Classes */
+/*  */
+/*  */
+
+/* Display Properties */
+/* Flex => d-flex, Block => d-block, Inline => d-inline, Inline-Block => d-inblock, Grid => d-grid */
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inblock {
+    display: inline-block;
+}
+
+.d-grid {
+    display: grid;
+}
+
+/* Alignment And Justification Properties */
+/* Align-items Center => aj-ai-c, Justify-items Center => aj-ji-c, Align-content Center => aj-ac-c, Justify-content Center => aj-jc-c */
+.aj-ai-c {
+    align-items: center;
+}
+
+.aj-ji-c {
+    justify-items: center;
+}
+
+.aj-ac-c {
+    align-content: center;
+}
+
+.aj-jc-c {
+    justify-content: center;
+}

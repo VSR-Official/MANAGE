@@ -1,0 +1,62 @@
+/* Properties Of Responsive Navigation Top->Side Start */
+.TNB1_ResponsiveNav {
+    /* background-color: red; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Properties Of Menu Button Start */
+#TNB1_MenuButton {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    left: 15px;
+}
+.TNB1MB_Bar1, .TNB1MB_Bar2, .TNB1MB_Bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.TNB1MB_Change .TNB1MB_Bar1 {
+    transform: translate(0, 7px) rotate(-45deg);
+}
+
+.TNB1MB_Change .TNB1MB_Bar2 {
+    opacity: 0;
+}
+
+.TNB1MB_Change .TNB1MB_Bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+/* Properties Of Menu Button End */
+
+/* Properties Of Overlay Navigation Pane Start */
+#TNB1_NavOverlay {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    color: white;
+    display: none;
+    z-index: 10;
+    overflow: hidden;
+}
+
+/* no-scroll is used to stop scrolling in body when navigation bar is open */
+.no-scroll {
+    overflow: hidden;
+}
+/* Properties Of Overlay Navigation Pane End */
+/* Properties Of Responsive Navigation Top->Side End */
